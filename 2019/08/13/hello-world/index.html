@@ -10,17 +10,20 @@
 <title>Hello World - wuheng</title>
 
 
-    <meta name="keywords" content="Testing">
+    <meta name="description" content="原创">
+<meta name="keywords" content="JUC">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hello World">
 <meta property="og:url" content="http://yoursite.com/2019/08/13/hello-world/index.html">
 <meta property="og:site_name" content="wuheng">
+<meta property="og:description" content="原创">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/images/og_image.png">
-<meta property="og:updated_time" content="2019-08-18T14:34:08.394Z">
+<meta property="og:image" content="http://yoursite.com/gallery/thumbnails/1.jpg">
+<meta property="og:updated_time" content="2019-08-19T07:31:34.496Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hello World">
-<meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
+<meta name="twitter:description" content="原创">
+<meta name="twitter:image" content="http://yoursite.com/gallery/thumbnails/1.jpg">
 
 
 
@@ -140,7 +143,13 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-9-tablet is-9-desktop is-9-widescreen has-order-2 column-main"><div class="card">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span  class="image is-7by1">
+            <img class="thumbnail" src="/gallery/thumbnails/1.jpg" alt="Hello World">
+        </span>
+    </div>
     
     <div class="card-content article ">
         
@@ -192,7 +201,7 @@ Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [docume
             <div class="level-start">
                 <div class="level-item">
                     <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/tags/Testing/">Testing</a>
+                    <a class="has-link-grey -link" href="/tags/JUC/">JUC</a>
                 </div>
             </div>
         </div>
@@ -245,27 +254,28 @@ Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [docume
     <div class="card-content">
         <h3 class="title is-5 has-text-weight-normal">评论</h3>
         
+<div id="comment-container"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.4.1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.4.1/dist/gitalk.min.js"></script>
 <script>
-    var disqus_config = function () {
-        this.page.url = 'http://yoursite.com/2019/08/13/hello-world/';
-        this.page.identifier = '2019/08/13/hello-world/';
-    };
-    (function() {
-        var d = document, s = d.createElement('script');  
-        s.src = '//' + '不能为空' + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
+    var gitalk = new Gitalk({
+        clientID: 'a6978c28649c066863dd',
+        clientSecret: 'd0cb525ef9bfe723b97cbf46bf5dd01a4185a576',
+        id: 'bb9722c60ad1201f3144d867ebd79c6d',
+        repo: 'blob-gitalk',
+        owner: 'wuhengc',
+        admin: "wuhengc",
+        createIssueManually: false,
+        distractionFreeMode: false
+    })
+    gitalk.render('comment-container')
 </script>
 
-<div id="disqus_thread">
-    
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
     </div>
 </div>
 </div>
                 
+					 
 
 
 
@@ -457,13 +467,15 @@ Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [docume
         <h3 class="menu-label">
             标签云
         </h3>
-        <a href="/tags/Testing/" style="font-size: 10px;">Testing</a>
+        <a href="/tags/JUC/" style="font-size: 10px;">JUC</a>
     </div>
 </div>
 
     
     
-        <div class="column-right-shadow is-hidden-widescreen ">
+        <div class="column-right-shadow 
+			is-hidden-widescreen 
+			">
         
             
 <div class="card widget">
@@ -476,7 +488,7 @@ Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [docume
             
             <a href="/2019/08/13/hello-world/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Hello World">
+                    <img class="thumbnail" src="/gallery/thumbnails/1.jpg" alt="Hello World">
                 </p>
             </a>
             
@@ -528,8 +540,8 @@ Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [docume
             <div class="field is-grouped is-grouped-multiline">
                 
                 <div class="control">
-                    <a class="tags has-addons" href="/tags/Testing/">
-                        <span class="tag">Testing</span>
+                    <a class="tags has-addons" href="/tags/JUC/">
+                        <span class="tag">JUC</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -543,7 +555,9 @@ Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [docume
     
 </div>
 
-                <!--
+				
+                
+					 
 
 
 
@@ -561,7 +575,7 @@ Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [docume
             
             <a href="/2019/08/13/hello-world/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Hello World">
+                    <img class="thumbnail" src="/gallery/thumbnails/1.jpg" alt="Hello World">
                 </p>
             </a>
             
@@ -613,8 +627,8 @@ Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [docume
             <div class="field is-grouped is-grouped-multiline">
                 
                 <div class="control">
-                    <a class="tags has-addons" href="/tags/Testing/">
-                        <span class="tag">Testing</span>
+                    <a class="tags has-addons" href="/tags/JUC/">
+                        <span class="tag">JUC</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -626,7 +640,8 @@ Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [docume
     
     
 </div>
--->
+
+				
             </div>
         </div>
     </section>

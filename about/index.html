@@ -19,7 +19,7 @@
 <meta property="og:description" content="我叫五横，在深圳搬砖人生格言 — 我想起那天夕阳下的奔跑，那是我逝去的青春。 &amp;emsp;">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
-<meta property="og:updated_time" content="2019-08-18T16:25:48.632Z">
+<meta property="og:updated_time" content="2019-08-19T06:19:33.455Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于我">
 <meta name="twitter:description" content="我叫五横，在深圳搬砖人生格言 — 我想起那天夕阳下的奔跑，那是我逝去的青春。 &amp;emsp;">
@@ -146,7 +146,7 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-9-tablet is-9-desktop is-9-widescreen has-order-2 column-main"><div class="card">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
     
     <div class="card-content article ">
         
@@ -160,7 +160,7 @@
 <p>我叫五横，在深圳搬砖<br>人生格言 — 我想起那天夕阳下的奔跑，那是我逝去的青春。</p>
 <p>&emsp;</p>
 
-    <div id="aplayer-stfuyUsq" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="603532535" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"></div>
+    <div id="aplayer-sXLZhhxR" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="603532535" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"></div>
 
 
 
@@ -214,27 +214,28 @@
     <div class="card-content">
         <h3 class="title is-5 has-text-weight-normal">评论</h3>
         
+<div id="comment-container"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.4.1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.4.1/dist/gitalk.min.js"></script>
 <script>
-    var disqus_config = function () {
-        this.page.url = 'http://yoursite.com/about/index.html';
-        this.page.identifier = 'about/index.html';
-    };
-    (function() {
-        var d = document, s = d.createElement('script');  
-        s.src = '//' + '不能为空' + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
+    var gitalk = new Gitalk({
+        clientID: 'a6978c28649c066863dd',
+        clientSecret: 'd0cb525ef9bfe723b97cbf46bf5dd01a4185a576',
+        id: 'a7224db13f3a49096aa27c1876d1a947',
+        repo: 'blob-gitalk',
+        owner: 'wuhengc',
+        admin: "wuhengc",
+        createIssueManually: false,
+        distractionFreeMode: false
+    })
+    gitalk.render('comment-container')
 </script>
 
-<div id="disqus_thread">
-    
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
     </div>
 </div>
 </div>
                 
+					 
 
 
 
@@ -426,13 +427,15 @@
         <h3 class="menu-label">
             标签云
         </h3>
-        <a href="/tags/Testing/" style="font-size: 10px;">Testing</a>
+        <a href="/tags/JUC/" style="font-size: 10px;">JUC</a>
     </div>
 </div>
 
     
     
-        <div class="column-right-shadow is-hidden-widescreen ">
+        <div class="column-right-shadow 
+			is-hidden-widescreen 
+			">
         
             
 <div class="card widget">
@@ -445,7 +448,7 @@
             
             <a href="/2019/08/13/hello-world/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Hello World">
+                    <img class="thumbnail" src="/gallery/thumbnails/1.jpg" alt="Hello World">
                 </p>
             </a>
             
@@ -497,8 +500,8 @@
             <div class="field is-grouped is-grouped-multiline">
                 
                 <div class="control">
-                    <a class="tags has-addons" href="/tags/Testing/">
-                        <span class="tag">Testing</span>
+                    <a class="tags has-addons" href="/tags/JUC/">
+                        <span class="tag">JUC</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -512,7 +515,9 @@
     
 </div>
 
-                <!--
+				
+                
+					 
 
 
 
@@ -530,7 +535,7 @@
             
             <a href="/2019/08/13/hello-world/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Hello World">
+                    <img class="thumbnail" src="/gallery/thumbnails/1.jpg" alt="Hello World">
                 </p>
             </a>
             
@@ -582,8 +587,8 @@
             <div class="field is-grouped is-grouped-multiline">
                 
                 <div class="control">
-                    <a class="tags has-addons" href="/tags/Testing/">
-                        <span class="tag">Testing</span>
+                    <a class="tags has-addons" href="/tags/JUC/">
+                        <span class="tag">JUC</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -595,7 +600,8 @@
     
     
 </div>
--->
+
+				
             </div>
         </div>
     </section>
